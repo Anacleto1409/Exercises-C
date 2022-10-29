@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 //Drawing
 int main()
 {
@@ -56,4 +59,64 @@ printf("%f", ceil(53.65748));
 printf("%f", floor(32.6688));
 return 0;
 }
+
 //Comments
+/*
+printf("Hoje está um belo dia");
+*/
+
+//Constants
+int main()
+{
+const int num = 20;
+printf("%d\n", num);
+printf("%d", num);
+printf("%d", 90);
+return 0;
+}
+
+//Getting User Input
+int main()
+{
+int age;
+printf("Enter your age: ");
+scanf("%d", &age);
+printf("You are %d years old", age);
+return 0;
+}
+
+int main()
+{
+double age;
+printf("Enter your age: ");
+scanf("%lf", &age);
+printf("Your age is years %f old", age);
+return 0;
+}
+
+int main()
+{
+char grade;
+printf("Enter your grade: ");
+scanf("%c", &grade);
+printf("Your grade is %c", grade);
+return 0;
+}
+
+int main()
+{
+char name[30];
+printf("Enter your name: ");
+scanf("%s", name);
+printf("Your name is %s", name);
+return 0;
+}
+
+int main()
+{
+char name[20];
+printf("Enter your name: ");
+fgets(name, 20, stdin);
+printf("Your name is %s", name);
+return 0;
+}
